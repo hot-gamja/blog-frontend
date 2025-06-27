@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body>
+  <p>테스트1</p>
+
+  <script>
+    // 새 <p> 요소 생성
+    const newP = document.createElement('p');
+    newP.textContent = '테스트2'; // 내용 설정
+
+    // 기존 p 요소 찾기
+    const originalP = document.querySelector('p');
+
+    // 기존 p 바로 뒤에 삽입
+    originalP.insertAdjacentElement('afterend', newP);
+  </script>
+</body>
+</html>
